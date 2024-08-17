@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D26F3CB22C70F47D00B84678 /* FocusBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CB12C70F47D00B84678 /* FocusBrowserApp.swift */; };
+		D26F3CB42C70F47D00B84678 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CB32C70F47D00B84678 /* ContentView.swift */; };
+		D26F3CB62C70F47E00B84678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D26F3CB52C70F47E00B84678 /* Assets.xcassets */; };
+		D26F3CB92C70F47E00B84678 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D26F3CB82C70F47E00B84678 /* Preview Assets.xcassets */; };
+		D26F3CBB2C70F47E00B84678 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CBA2C70F47E00B84678 /* Persistence.swift */; };
+		D26F3CBE2C70F47E00B84678 /* FocusBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CBC2C70F47E00B84678 /* FocusBrowser.xcdatamodeld */; };
+		D26F3CCB2C70F5E300B84678 /* DeniedURLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26F3CC52C70F5E300B84678 /* DeniedURLTableViewCell.xib */; };
+		D26F3CCD2C70F5E300B84678 /* browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26F3CC92C70F5E300B84678 /* browser.storyboard */; };
+		D26F3CD32C70F61C00B84678 /* DeniedURLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CCE2C70F61C00B84678 /* DeniedURLTableViewCell.swift */; };
+		D26F3CD42C70F61C00B84678 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CD02C70F61C00B84678 /* BrowserViewController.swift */; };
+		D26F3CD52C70F61C00B84678 /* NetworkRequestHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CD12C70F61C00B84678 /* NetworkRequestHistoryViewController.swift */; };
+		D26F3CD82C70F68E00B84678 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CD62C70F68E00B84678 /* NetworkService.swift */; };
+		D26F3CDB2C70F6B100B84678 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = D26F3CDA2C70F6B100B84678 /* SwiftMessages */; };
+		D26F3CDF2C70F6C500B84678 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CDE2C70F6C500B84678 /* Constants.swift */; };
+		D26F3CE32C70F6EE00B84678 /* BrowserUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CE02C70F6EE00B84678 /* BrowserUtils.swift */; };
+		D26F3CE42C70F6EE00B84678 /* WKClearCookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CE12C70F6EE00B84678 /* WKClearCookies.swift */; };
+		D26F3CE72C70F71E00B84678 /* DeniedNetworkRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CE62C70F71E00B84678 /* DeniedNetworkRequestDelegate.swift */; };
+		D26F3CEA2C70F80300B84678 /* UKBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F3CE92C70F80300B84678 /* UKBrowserView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D26F3CAE2C70F47D00B84678 /* FocusBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26F3CB12C70F47D00B84678 /* FocusBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusBrowserApp.swift; sourceTree = "<group>"; };
+		D26F3CB32C70F47D00B84678 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D26F3CB52C70F47E00B84678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D26F3CB82C70F47E00B84678 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D26F3CBA2C70F47E00B84678 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D26F3CBD2C70F47E00B84678 /* FocusBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusBrowser.xcdatamodel; sourceTree = "<group>"; };
+		D26F3CC52C70F5E300B84678 /* DeniedURLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeniedURLTableViewCell.xib; sourceTree = "<group>"; };
+		D26F3CC92C70F5E300B84678 /* browser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = browser.storyboard; sourceTree = "<group>"; };
+		D26F3CCE2C70F61C00B84678 /* DeniedURLTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeniedURLTableViewCell.swift; sourceTree = "<group>"; };
+		D26F3CD02C70F61C00B84678 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		D26F3CD12C70F61C00B84678 /* NetworkRequestHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestHistoryViewController.swift; sourceTree = "<group>"; };
+		D26F3CD62C70F68E00B84678 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D26F3CDE2C70F6C500B84678 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D26F3CE02C70F6EE00B84678 /* BrowserUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserUtils.swift; sourceTree = "<group>"; };
+		D26F3CE12C70F6EE00B84678 /* WKClearCookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKClearCookies.swift; sourceTree = "<group>"; };
+		D26F3CE62C70F71E00B84678 /* DeniedNetworkRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeniedNetworkRequestDelegate.swift; sourceTree = "<group>"; };
+		D26F3CE92C70F80300B84678 /* UKBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKBrowserView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D26F3CAB2C70F47D00B84678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26F3CDB2C70F6B100B84678 /* SwiftMessages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D26F3CA52C70F47D00B84678 = {
+			isa = PBXGroup;
+			children = (
+				D26F3CB02C70F47D00B84678 /* FocusBrowser */,
+				D26F3CAF2C70F47D00B84678 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D26F3CAF2C70F47D00B84678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CAE2C70F47D00B84678 /* FocusBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D26F3CB02C70F47D00B84678 /* FocusBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CB12C70F47D00B84678 /* FocusBrowserApp.swift */,
+				D26F3CB32C70F47D00B84678 /* ContentView.swift */,
+				D26F3CE82C70F7C300B84678 /* Views */,
+				D26F3CD72C70F68E00B84678 /* Services */,
+				D26F3CC42C70F58200B84678 /* UIKit */,
+				D26F3CE22C70F6EE00B84678 /* Utilities */,
+				D26F3CB52C70F47E00B84678 /* Assets.xcassets */,
+				D26F3CBA2C70F47E00B84678 /* Persistence.swift */,
+				D26F3CBC2C70F47E00B84678 /* FocusBrowser.xcdatamodeld */,
+				D26F3CB72C70F47E00B84678 /* Preview Content */,
+			);
+			path = FocusBrowser;
+			sourceTree = "<group>";
+		};
+		D26F3CB72C70F47E00B84678 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CB82C70F47E00B84678 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D26F3CC42C70F58200B84678 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CE52C70F71300B84678 /* Delegates */,
+				D26F3CD22C70F61C00B84678 /* Controllers */,
+				D26F3CCA2C70F5E300B84678 /* Storyboards */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		D26F3CC62C70F5E300B84678 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CC52C70F5E300B84678 /* DeniedURLTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D26F3CCA2C70F5E300B84678 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CC62C70F5E300B84678 /* Cells */,
+				D26F3CC92C70F5E300B84678 /* browser.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D26F3CCF2C70F61C00B84678 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CCE2C70F61C00B84678 /* DeniedURLTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D26F3CD22C70F61C00B84678 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CCF2C70F61C00B84678 /* Cells */,
+				D26F3CD02C70F61C00B84678 /* BrowserViewController.swift */,
+				D26F3CD12C70F61C00B84678 /* NetworkRequestHistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D26F3CD72C70F68E00B84678 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CD62C70F68E00B84678 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D26F3CE22C70F6EE00B84678 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CDE2C70F6C500B84678 /* Constants.swift */,
+				D26F3CE02C70F6EE00B84678 /* BrowserUtils.swift */,
+				D26F3CE12C70F6EE00B84678 /* WKClearCookies.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D26F3CE52C70F71300B84678 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CE62C70F71E00B84678 /* DeniedNetworkRequestDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D26F3CE82C70F7C300B84678 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D26F3CE92C70F80300B84678 /* UKBrowserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D26F3CAD2C70F47D00B84678 /* FocusBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26F3CC12C70F47E00B84678 /* Build configuration list for PBXNativeTarget "FocusBrowser" */;
+			buildPhases = (
+				D26F3CAA2C70F47D00B84678 /* Sources */,
+				D26F3CAB2C70F47D00B84678 /* Frameworks */,
+				D26F3CAC2C70F47D00B84678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FocusBrowser;
+			packageProductDependencies = (
+				D26F3CDA2C70F6B100B84678 /* SwiftMessages */,
+			);
+			productName = FocusBrowser;
+			productReference = D26F3CAE2C70F47D00B84678 /* FocusBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D26F3CA62C70F47D00B84678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D26F3CAD2C70F47D00B84678 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D26F3CA92C70F47D00B84678 /* Build configuration list for PBXProject "FocusBrowser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D26F3CA52C70F47D00B84678;
+			packageReferences = (
+				D26F3CD92C70F6B100B84678 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+			);
+			productRefGroup = D26F3CAF2C70F47D00B84678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D26F3CAD2C70F47D00B84678 /* FocusBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D26F3CAC2C70F47D00B84678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26F3CB92C70F47E00B84678 /* Preview Assets.xcassets in Resources */,
+				D26F3CCD2C70F5E300B84678 /* browser.storyboard in Resources */,
+				D26F3CB62C70F47E00B84678 /* Assets.xcassets in Resources */,
+				D26F3CCB2C70F5E300B84678 /* DeniedURLTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D26F3CAA2C70F47D00B84678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26F3CE72C70F71E00B84678 /* DeniedNetworkRequestDelegate.swift in Sources */,
+				D26F3CBB2C70F47E00B84678 /* Persistence.swift in Sources */,
+				D26F3CE42C70F6EE00B84678 /* WKClearCookies.swift in Sources */,
+				D26F3CD52C70F61C00B84678 /* NetworkRequestHistoryViewController.swift in Sources */,
+				D26F3CD82C70F68E00B84678 /* NetworkService.swift in Sources */,
+				D26F3CD42C70F61C00B84678 /* BrowserViewController.swift in Sources */,
+				D26F3CBE2C70F47E00B84678 /* FocusBrowser.xcdatamodeld in Sources */,
+				D26F3CB42C70F47D00B84678 /* ContentView.swift in Sources */,
+				D26F3CEA2C70F80300B84678 /* UKBrowserView.swift in Sources */,
+				D26F3CE32C70F6EE00B84678 /* BrowserUtils.swift in Sources */,
+				D26F3CD32C70F61C00B84678 /* DeniedURLTableViewCell.swift in Sources */,
+				D26F3CB22C70F47D00B84678 /* FocusBrowserApp.swift in Sources */,
+				D26F3CDF2C70F6C500B84678 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D26F3CBF2C70F47E00B84678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D26F3CC02C70F47E00B84678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D26F3CC22C70F47E00B84678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2024081701;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusBrowser/Preview Content\"";
+				DEVELOPMENT_TEAM = 2JDGUK4DRH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FocusBrowser;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.johnchoi96.FocusBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D26F3CC32C70F47E00B84678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2024081701;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusBrowser/Preview Content\"";
+				DEVELOPMENT_TEAM = 2JDGUK4DRH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FocusBrowser;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.johnchoi96.FocusBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D26F3CA92C70F47D00B84678 /* Build configuration list for PBXProject "FocusBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26F3CBF2C70F47E00B84678 /* Debug */,
+				D26F3CC02C70F47E00B84678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D26F3CC12C70F47E00B84678 /* Build configuration list for PBXNativeTarget "FocusBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26F3CC22C70F47E00B84678 /* Debug */,
+				D26F3CC32C70F47E00B84678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D26F3CD92C70F6B100B84678 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D26F3CDA2C70F6B100B84678 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D26F3CD92C70F6B100B84678 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D26F3CBC2C70F47E00B84678 /* FocusBrowser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D26F3CBD2C70F47E00B84678 /* FocusBrowser.xcdatamodel */,
+			);
+			currentVersion = D26F3CBD2C70F47E00B84678 /* FocusBrowser.xcdatamodel */;
+			path = FocusBrowser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D26F3CA62C70F47D00B84678 /* Project object */;
+}
